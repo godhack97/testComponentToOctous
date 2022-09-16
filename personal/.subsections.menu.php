@@ -1,0 +1,45 @@
+<?
+$aMenuLinks = array(
+  array(
+    'Профиль',
+    '/personal/profile/',
+    array(),
+    array(),
+    ''
+  ),
+  array(
+    'Избранное',
+    '/personal/favorites/',
+    array(),
+    array(),
+    ''
+  ),
+  array(
+    'Покупки',
+    '/personal/order/',
+    array(),
+    array(),
+    ''
+  ),
+  array(
+    'Управление',
+    '/manager/',
+    array(),
+    array(),
+    'CSite::InGroup(array(1,8,9,15,16))'
+  ),
+  array(
+    'Каталог',
+    '/partner/',
+    array(),
+    array(),
+    'CSite::InGroup(array(1,17))'
+  ),
+  array(
+    'Выход',
+    '?logout=yes',
+    array(),
+    array('CLASS' => 'exit'),
+    ''
+  )
+);

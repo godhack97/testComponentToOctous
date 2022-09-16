@@ -1,0 +1,4 @@
+<?
+$MESS["SALE_PERSONAL_PRODUCTS"] = "товаров";
+$MESS["SALE_PERSONAL_PRODUCT"] = "товара";
+$MESS["SALE_PERSONAL_PRODUCT_ONE"] = "товар";

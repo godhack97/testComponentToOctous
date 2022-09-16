@@ -1,0 +1,160 @@
+.news-trend-list {
+  width: calc(100% + 47px);
+  display: grid;
+  column-gap: 47px;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - 47px);
+}
+
+.news-trend-list .news-trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-trend-list .news-trend-card .image {
+  position: relative;
+  padding-bottom: 150.82%;
+  overflow: hidden;
+}
+
+.news-trend-list .news-trend-card .image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.news-trend-list .news-trend-card .description {
+  margin-top: 16px;
+  line-height: 1;
+}
+
+.news-trend-list .news-trend-card .description .subtitle {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #8d8d8d;
+}
+
+.news-trend-list .news-trend-card .description .name-block {
+  line-height: 1;
+}
+
+.news-trend-list .news-trend-card .description .name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.news-trend-list .news-trend-card .price-block {
+  position: relative;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.news-trend-list .news-trend-card .price-block .price {
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.news-trend-list .news-trend-card .price-block .price.price-old {
+  margin-left: 5px;
+  color: rgba(31, 31, 31, 0.35);
+  text-decoration: line-through;
+}
+
+.news-trend-list .news-trend-card .price-block .colors-block {
+  /*display: flex;*/
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  bottom: 3px;
+
+  display: none;
+}
+
+.news-trend-list .news-trend-card .price-block .colors-block .color {
+  width: 13px;
+  min-width: 13px;
+  height: 13px;
+  min-height: 13px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.news-trend-list .news-trend-card .price-block .colors-block .color:not(:last-child) {
+  margin-right: 8px;
+}
+
+.news-trend-list .news-trend-card .price-block .colors-block .color.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 50%;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+}
+
+@media only screen and (max-width: 1440px) {
+
+  .news-trend-list {
+    width: calc(100% + 40px);
+    column-gap: 40px;
+    grid-auto-columns: calc(25% - 40px);
+  }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .news-trend-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+  }
+
+  .news-trend-list .news-trend-card .description {
+    margin-top: 10px;
+  }
+
+  .news-trend-list .news-trend-card .description .subtitle {
+    margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .news-trend-list {
+    gap: 30px 15px;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .news-trend-list .news-trend-card .price-block .colors-block {
+    display: none;
+  }
+
+}

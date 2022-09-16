@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"About",
+		"/en/company/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Condition of purchase", 
+		"/en/conditions/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Exchange and refund", 
+		"/en/return/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Write to us", 
+		"/en/write/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Reviews", 
+		"/en/reviews/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Partners", 
+		"/en/partner/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Contacts", 
+		"/en/contacts/",
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

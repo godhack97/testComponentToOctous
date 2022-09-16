@@ -1,0 +1,57 @@
+
+.hide_empty_top {
+  display: none;
+}
+
+.basket-coupon-section {
+  margin-top: 30px;
+}
+
+.basket-coupon-wrapper {
+  width: calc(50% - 60px);
+  padding-top: 25px;
+}
+
+.basket-coupon-alert-section {
+  margin-bottom: 15px;
+}
+
+.basket-coupon-alert-section,
+.basket-coupon-alert-section * {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.basket-coupon-alert {
+  position: relative;
+  padding: 0 70px 5px 0;
+}
+
+.basket-coupon-text {
+  color: #8D8D8D;
+}
+
+.basket-coupon-text strong {
+  text-transform: uppercase;
+  color: #1F1F1F;
+}
+
+.basket-coupon-alert .close-link {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  text-transform: lowercase;
+  border-bottom: 1px solid;
+  line-height: 1;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.basket-coupon-block-coupon-btn {
+  
+}
+
+.basket-coupon-section.form .field .placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+}

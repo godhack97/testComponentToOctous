@@ -1,0 +1,280 @@
+div.title-search-result {
+  border: 1px solid #c6c6c6;
+  display: none;
+  overflow: hidden;
+  z-index: 205; }
+
+table.title-search-result {
+  border-collapse: collapse;
+  border: none;
+  width: 10%; }
+
+table.title-search-result th {
+  background-color: #F7F7F7;
+  border-right: 1px solid #e8e8e8;
+  color: #949494;
+  font-weight: normal;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 14px;
+  padding-right: 12px;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%; }
+
+table.title-search-result td {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: left;
+  white-space: nowrap; }
+
+table.title-search-result td.title-search-item {
+  padding-left: 8px;
+  padding-right: 15px; }
+
+table.title-search-result td.title-search-item a {
+  padding-left: 4px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+  vertical-align: top;
+  display: block; }
+
+table.title-search-result td.title-search-item img {
+  vertical-align: top; }
+
+table.title-search-result td.title-search-item b {
+  color: #cf0000;
+  font-weight: normal; }
+
+table.title-search-result tr.title-search-selected td
+, table.title-search-result tr.title-search-selected a
+, table.title-search-result tr.title-search-selected td.title-search-more a {
+  background-color: #fff2be; }
+
+table.title-search-result td.title-search-more {
+  font-size: 11px;
+  font-weight: normal;
+  padding-right: 15px;
+  padding-left: 24px;
+  padding-top: 0px; }
+
+table.title-search-result td.title-search-more a {
+  padding-left: 12px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #999999; }
+
+table.title-search-result td.title-search-all {
+  padding-left: 24px;
+  padding-right: 15px; }
+
+table.title-search-result td.title-search-all a {
+  padding-left: 4px;
+  text-decoration: none;
+  color: #808080; }
+
+table.title-search-result td.title-search-separator
+, table.title-search-result th.title-search-separator {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 4px; }
+
+div.title-search-fader {
+  display: none;
+  background-image: url("images/fader.png");
+  background-position: right top;
+  background-repeat: repeat-y;
+  position: absolute; }
+
+.search.set-search .search_result {
+  display: block;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search_result {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  max-height: 300px;
+  overflow: auto; 
+}
+
+.search_result__item {
+  overflow: hidden;
+  cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.search_result__item:hover {
+  opacity: .6;
+}
+
+.search_result__item .pict {
+  height: 92px;
+  width: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left; 
+}
+
+.search_result__item .body {
+  margin-left: 20px; 
+}
+
+.search_result__item .body .body_name {
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1F1F1F;
+  margin-bottom: 8px;
+}
+
+.search_result__item .body .price {
+  font-size: 13px;
+  line-height: 1;
+  color: #1F1F1F;
+}
+
+.search-scu .search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.search-scu .search {
+  padding-bottom: 5px;
+}
+
+.search-scu .search {
+  position: relative;
+  margin-right: 118px;
+  transition: all .2s ease;
+}
+
+.search-scu .search .name {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 12px;
+  font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+  position: relative;
+  left: 0;
+  top: 2px;
+  transition: all .2s ease;
+}
+
+.search-scu .search .field {
+  position: relative;
+  transition: all .2s ease;
+}
+
+.search-scu .search .field:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #000;
+  bottom: 7px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.search-scu .search.hover:hover .field:after {
+  opacity: .6;
+}
+
+.search-scu .search .field .query {
+  opacity: 0;
+  width: 220px;
+  height: 16px;
+  border: 0 none;
+  background-color: transparent;
+  transition: all .2s ease;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.search-scu .search .field .send {
+  opacity: 0;
+  visibility: visible;
+  position: absolute;
+  right: 3px;
+  bottom: 0;
+  background-color: transparent;
+  background-image: url(/local/templates/sodamoda/images/icons/search.png);
+  background-size: contain;
+  border: 0 none;
+  height: 19px;
+  width: 20px;
+  font-size: 0;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.search-scu .search .overlap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.search-scu .search.set-search {
+  padding-bottom: 0;
+  padding-top: 5px;
+  margin-right: 0;
+}
+
+.search-scu .search.set-search .overlap {
+  display: none;
+}
+
+.search-scu .search.set-search .name {
+  opacity: 0;
+  position: absolute;
+  left: -55px;
+}
+
+.search-scu .search.set-search .field {
+  width: 100%;
+}
+
+.search-scu .search.set-search .field .query {
+  opacity: 1;
+  width: 100%;
+  height: 44px;
+  padding: 0 40px 0 0;
+}
+
+.search-scu .search.set-search .field .send {
+  opacity: 1;
+  visibility: visible;
+  bottom: 13px;
+}
+
+.search-scu .set-search .field:after {
+  bottom: 0;
+}
+

@@ -1,0 +1,16 @@
+.o-fav-btn {
+    display: block;
+    cursor: pointer;
+}
+
+.o-fav-btn svg {
+    width: 30px;
+}
+
+.o-fav-btn.is-load {
+    pointer-events: none;
+}
+
+.o-fav-btn.is-fav svg path {
+    fill: red;
+}

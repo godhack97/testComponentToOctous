@@ -1,0 +1,25 @@
+.table td {
+	vertical-align:middle !important;
+}
+.wish-td-img {
+	width:170px;
+}
+.wish-td-price {
+	width:150px;
+}
+.wish-td-remove {
+	width:10px;
+}
+.wish-td-remove a {
+	color:#777;
+	text-decoration:underline;
+	font-size:16px;
+}
+.wish-social a {
+	color:#777;
+}
+.wish-record {
+	font-weight:bold;
+	font-size:16px;
+	padding:10px 0 !important;
+}

@@ -1,0 +1,91 @@
+
+.action-banner-main {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  text-decoration: none;
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 25px 50px 25px 33px;
+}
+
+.action-banner-main .plank {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.action-banner-main:hover .plank {
+  opacity: .6;
+}
+
+.action-banner-visible .action-banner-main {
+  display: block;
+}
+
+
+@media only screen and (max-width: 1280px) {
+  
+  .action-banner-main {
+    bottom: 100px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+  .action-banner-main {
+    padding: 15px 20px 15px 23px;
+  }
+
+  .action-banner-main .plank {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+}
+
+
+@media only screen and (min-width: 769px) {
+
+  aside,
+  header .logo img,
+  header .search.set-search,
+  header .info .menu .item,
+  header .info .basket .wrap-icons {
+    transition: all .3s ease;
+  }
+
+  .slider-index-dark-mode header .logo img {
+    filter: invert(95%);
+  }
+
+  .slider-index-dark-mode header .search {
+    filter: invert(95%);
+  }
+
+  .slider-index-dark-mode header .info .menu .item {
+    color: #fff;
+  }
+
+  .slider-index-dark-mode header .info .menu .item .item.hover {
+    filter: invert(0%);
+  }
+
+  .slider-index-dark-mode header .favorites-link,
+  .slider-index-dark-mode header .info .basket .wrap-icons {
+    filter: invert(95%);
+  }
+
+  .slider-index-dark-mode aside .menu-left-top,
+  .slider-index-dark-mode aside .menu-left-bottom {
+    filter: invert(95%);
+  }
+  
+}

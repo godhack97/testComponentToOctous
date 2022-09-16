@@ -1,0 +1,85 @@
+
+.tracking-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tracking-form{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.tracking-form form{
+    display: flex;
+}
+.tracking-form__elem-inp{
+    flex-grow: 2;
+    width: auto;
+}
+.tracking-form__elem-btn{
+    margin: 0 10px;
+    flex: 1 1 50px;
+}
+
+.tracking-items{
+    flex: 3;
+}
+.tracking-items__elem{
+    margin-bottom: 10px;
+}
+.track-item{
+    padding: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+    color: #555;
+    list-style-type: none;
+}
+.track-item__elem{
+    display: table;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.track-item__date,
+.track-item__event{
+    display: table-cell;
+}
+.track-item__date{
+    text-align: right;
+    width: 100px;
+    padding-right: 15px;
+}
+.track-item__date span{
+    display: block;
+}
+.track-item__event em{
+    display: block;
+    color: #333;
+}
+.track-item__event_success{
+    background-color: green;
+    color: #fff;
+}
+.track-item__event_success em{
+    color: #fff;
+}
+.track-item__area{
+    flex-grow: 3;
+}
+
+.tracking-info{
+    flex: 1;
+}
+.tracking-info__elem{
+    margin-bottom: 10px;
+}
+.tracking-info__elem span{
+    font-weight: bold;
+}
+
+.tracking-error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px #f5c6cb solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+    flex-basis: 100%;
+}

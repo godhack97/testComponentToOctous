@@ -1,0 +1,95 @@
+#bx-panel,
+#bx-panel div {
+  display: none !important;
+}
+
+aside,
+header,
+footer,
+.overlay-content,
+.indent-header-fixed {
+  opacity: 0;
+  visibility: hidden;
+  display: none !important;
+}
+
+.page-content article {
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.page-content article div[data-content] {
+}
+
+.fast-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.fast-links .ibutton {
+  min-width: 300px;
+  margin: 20px 0;
+}
+
+.fast-links .lang {
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: #1a1a1a;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.fast-links .ibutton .icon-apple {
+  margin: 8px 10px 0 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body,
+  html {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .wrapper {
+    padding: 0 10px !important;
+  }
+
+  /* .page-content article {
+    height: auto;
+    justify-content: flex-start;
+  } */
+  /*
+  .fast-links {
+    margin-top: 100px;
+    justify-content: flex-start;
+  } */
+}

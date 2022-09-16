@@ -1,0 +1,32 @@
+<?php
+$aMenuLinks = [
+	[
+		"About us",
+		"/company/",
+		[],
+		[],
+		""
+	],
+	[
+		"Reviews",
+		"/reviews/",
+		[],
+		[],
+		""
+	],
+	[
+		"Partners",
+		"/partner/",
+		[],
+		[],
+		""
+	],
+	[
+		"Contacts",
+		"/contacts/",
+		[],
+		[],
+		""
+	]
+];
+?>

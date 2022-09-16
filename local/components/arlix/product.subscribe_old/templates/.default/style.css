@@ -1,0 +1,44 @@
+.product-detail #content-popup-product-subscribe {
+  display: none;
+}
+
+.f-input {
+  position: relative;
+}
+
+.f-input .tip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  margin-top: 9px;
+  font-size: 12px;
+  width: auto;
+  white-space: nowrap;
+  line-height: 1.4;
+  background-color: #222;
+  color: #fff;
+  text-transform: none;
+  padding: 7px 10px 5px;
+  width: 134px;
+  margin-left: -67px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.f-input .tip.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.f-input .tip:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: -19px;
+  border: 10px solid transparent;
+  border-bottom: 9px solid #222;
+}

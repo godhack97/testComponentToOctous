@@ -1,0 +1,132 @@
+
+/*@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	src: local('HelveticaNeueCyr-Light'),
+		url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+	src: local('HelveticaNeueCyr-Medium'),
+		url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Italic.eot');
+	src: local('HelveticaNeueCyr-Italic'),
+		url('../fonts/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+	src: local('HelveticaNeueCyr-Bold'),
+		url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}*/
+
+/*
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../fonts/MyriadPro-Light.ttf);
+}
+
+
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Medium'), local('PTRootUI-Medium'), url('../fonts/Ptrootuimedium.woff2') format('woff2'), url('../fonts/Ptrootuimedium.woff') format('woff'), url('../fonts/Ptrootuimedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Light'), local('PTRootUI-Light'), url('../fonts/Ptrootuilight.woff2') format('woff2'), url('../fonts/Ptrootuilight.woff') format('woff'), url('../fonts/Ptrootuilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI'), local('PTRootUI-Regular'), url('../fonts/Ptrootui.woff2') format('woff2'), url('../fonts/Ptrootui.woff') format('woff'), url('../fonts/Ptrootui.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Bold'), local('PTRootUI-Bold'), url('../fonts/Ptrootuibold.woff2') format('woff2'), url('../fonts/Ptrootuibold.woff') format('woff'), url('../fonts/Ptrootuibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+*/
+
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local('SF-Pro-Display-Regular'),
+       url(../fonts/SF-Pro-Display-Regular.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local('SF-Pro-Display-Medium'),
+       url(../fonts/SF-Pro-Display-Medium.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local('SF-Pro-Display-Semibold'),
+       url(../fonts/SF-Pro-Display-Semibold.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local('SF-Pro-Display-Bold'),
+       url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
+       url('../fonts/SF-Pro-Display-Bold.woff') format("woff"),
+       url('../fonts/SF-Pro-Display-Bold.ttf') format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}

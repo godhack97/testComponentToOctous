@@ -1,0 +1,44 @@
+.ibutton-white {
+    display: inline-block;
+    background-color: #090909;
+    vertical-align: middle;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 35px;
+    border: 1px solid #090909;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.ibutton-white {
+    background-color: #FFF;
+    color: #090909;
+}
+
+.ibutton:hover {
+    background-color: transparent;
+    color: #090909;
+}
+
+.ibutton-white:hover {
+    background-color: #090909;
+    color: #FFF;
+}
+
+.buttons-wrapper {
+    margin-top: 50px;
+}
+
+.buttons-wrapper button {
+    min-width: 220px;
+}
+
+.buttons-wrapper button:first-child {
+    margin-right: 25px;
+}

@@ -1,0 +1,659 @@
+body .sberbank__price-string {
+  display: block;
+}
+
+#content-loading {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .85);
+  z-index: 199;
+  transition: all .2s ease;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.wrap-buttons-between .group-width {
+  width: calc(50% - 10px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.description-help {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8D8D8D;
+}
+
+.order {
+  border-bottom: 1px solid #CDCDCD;
+  position: relative;
+}
+
+.cols-order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.cols-order .col-order {
+  position: relative;
+  width: calc(50% - 60px);
+  min-width: calc(50% - 60px);
+  max-width: calc(50% - 60px);
+}
+
+.cols-order.cols-center {
+  justify-content: center;
+}
+
+
+
+.cols-order .col-order.col-payment,
+.cols-order .col-order .js-button-back-to-order {
+  display: none;
+}
+
+.display-col-payment .cols-order .col-order.col-payment {
+  display: block;
+}
+
+.display-col-payment .cols-order .col-order.col-buyer,
+.display-col-payment .cols-order .col-order.col-delivery {
+  display: none;
+}
+
+.display-col-payment .order.cols-order {
+  justify-content: center;
+}
+
+.display-col-payment .cols-order .col-order .js-button-back-to-order {
+  display: block;
+}
+
+.display-col-payment .cols-order .col-order .js-button-back-to-cart {
+  display: none;
+}
+
+.order .intro-text-wrap {
+  margin: 10px 0 0;
+}
+
+.order .text,
+.order .text a,
+.order .text span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8D8D8D;
+  border-bottom-color: #8D8D8D;
+}
+
+.order .buyer .text .js-city-change {
+  margin-left: 5px;
+  border-bottom-width: 0;
+  color: #8D8D8D;
+}
+
+.order .buyer .text .js-city-change:hover {
+  color: #444;
+}
+
+.order .buyer .form {
+  margin-top: 63px;
+}
+
+/*.order .buyer.type-moscow .field-code-contact_person {
+  display: none;
+}
+
+.order .buyer:not(.type-moscow) .field-code-contact_person {
+  display: block;
+}*/
+
+.order .buyer .field-code-delivery_required_date,
+.order .buyer .field-code-delivery_required_start_time,
+.order .buyer .field-code-delivery_required_time {
+  display: none;
+}
+
+.order .buyer .field-code-email {}
+
+/*.order .buyer:not(.type-moscow) .field-code-date {
+  display: none;
+}*/
+
+.order .buyer.mode-pickup .field-code-date {
+  display: none;
+}
+
+/*.order .methods {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}*/
+
+.order .methods .method:nth-child(1) {
+  margin-bottom: 60px;
+}
+
+.order .methods .caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #090909;
+  margin-bottom: 25px;
+}
+
+.order .methods .items {
+  margin-top: 40px;
+}
+
+.order .methods .items .payment:last-child .field-radio {
+  border-bottom: 0 none;
+  margin-bottom: 0;
+}
+
+.order .methods .field-radio {
+  margin-bottom: 11px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 15px 0 27px;
+}
+
+.order .methods .field-radio .label-flx {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.order .methods .payment:not(.active) .field-radio .label-flx:hover {
+  opacity: .6;
+}
+
+.order .methods .field-radio .label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #1a1a1a;
+  padding-top: 0;
+  padding-left: 24px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+
+.order .methods .field-radio .cost,
+.order .methods .field-radio .period {
+  font-size: 16px;
+  line-height: 18px;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.order .methods .field-radio .cost {
+  min-width: 120px;
+  text-align: right;
+}
+
+.order .methods .field-radio .period {
+  color: #8D8D8D;
+  text-align: right;
+}
+
+.order .methods .payment.active .field-radio .label,
+.order .methods .payment.active .field-radio .cost,
+.order .methods .payment.active .field-radio .period {
+  cursor: default;
+}
+
+.order .methods .field-radio .description {
+  line-height: 1.3;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-left: 26px;
+  position: relative;
+  cursor: pointer;
+  color: #8D8D8D;
+}
+
+.bx-calendar-name-day-wrap {
+  padding: 1px 0px 0 0px;
+  margin: 0 0 3px 0;
+}
+
+img.calendar-icon {
+  position: absolute;
+  margin: 0;
+  margin-left: 0;
+  right: 0;
+  margin-top: -8px;
+  right: 0;
+  top: 50%;
+  height: auto;
+  width: 16px;
+  border: 0 none;
+  background-color: transparent;
+  transition: all .2s ease;
+  opacity: 1;
+}
+
+img.calendar-icon-hover {
+  margin: 0;
+  margin-left: 0;
+  margin-top: -8px;
+  border: 0 none;
+  background-color: transparent;
+  opacity: .5;
+}
+
+.tablebodytext.sale-paysystem-description {
+  display: none;
+}
+
+.wrap-field-check-domestic {
+  margin: -20px 0 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.field-check-domestic {
+  width: calc(50% - 60px);
+}
+
+.field-check-domestic label {
+  width: 100%;
+  background-color: #DBE0E7;
+  padding: 13px 14px;
+  cursor: pointer;
+  line-height: 0;
+  transition: all .2s ease;
+}
+
+.field-check-domestic label:hover {
+  background-color: rgb(219 224 231 / 50%);
+}
+
+.field-check-domestic.field-checkbox .label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #1a1a1a;
+  padding-left: 30px;
+}
+
+.alert-domestic-account {
+  /*display: none;*/
+}
+
+.alert-domestic-account_hiden {
+  display: none;
+}
+
+.add-user-selection {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  border-bottom: 0 none !important;
+  line-height: 1;
+  color: #1a1a1a !important;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+#SDEK_pvz {
+  padding: 0;
+  height: 500px;
+}
+
+#SDEK_head {
+  padding-top: 0;
+  height: 0;
+}
+
+#SDEK_head #SDEK_logo {
+  display: none;
+}
+
+#SDEK_closer {
+  background-position: 0px -22px;
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+#SDEK_closer:hover {
+  opacity: .5;
+}
+
+#SDEK_mask {
+  opacity: .7;
+}
+
+.order .sdek_pvzLair {}
+
+#pvz-insert {}
+
+/*.order .methods .field-radio input[name=DELIVERY_ID]:checked ~ #pvz-insert {
+  display: block;
+}*/
+
+.pvz-select {
+  display: none;
+  margin: 23px 0 -16px 24px;
+}
+
+.pvz-select a {
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: all .2s ease;
+}
+
+.pvz-select a:hover {
+  border-bottom-color: transparent;
+}
+
+.order .methods .payment.active .pvz-select {
+  display: block;
+}
+
+.order .sdek_pvzAddr {
+  display: none;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.description .bx_result_price {
+  display: none;
+  margin: 15px 0;
+}
+
+.description .bx_result_price .black {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.payment.active .description .bx_result_price {
+  display: block;
+}
+
+
+.description .DPD_openTerminalSelect {
+  display: inline-block;
+  margin: 15px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+  transition: all .2s ease;
+}
+
+.description .DPD_openTerminalSelect:hover {
+  border-bottom-color: transparent;
+}
+
+.popup-window {
+  padding: 0;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .3);
+}
+
+.popup-window-close-icon {
+  height: 40px;
+  opacity: 1;
+  right: 0 !important;
+  top: 0 !important;
+  width: 40px;
+}
+
+.popup-window-close-icon:after {
+  width: 20px;
+  height: 20px;
+}
+
+#DPD_pvz_popup {
+  padding-top: 0;
+}
+
+#DPD_pvz {
+  padding: 0;
+  height: 500px;
+}
+
+#DPD_head {
+  display: none;
+}
+
+#DPD_map {
+  height: 100%;
+}
+
+#DPD_info {
+  height: 500px;
+  color: #444;
+  top: -500px;
+  left: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#DPD_delivInfo_PVZ {
+  line-height: 1.33;
+  padding-top: 7px;
+  padding-bottom: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+#DPD_delivInfo_PVZ * {
+  font-size: 13px;
+}
+
+#DPD_delivInfo_PVZ span {
+  font-weight: 600;
+}
+
+#DPD_modController {
+  margin: 7px 0 0;
+}
+
+
+#tPP * {
+  line-height: 1.3;
+  font-size: 12px;
+  color: #8D8D8D;
+}
+
+#tPP tr:nth-child(1) td:nth-child(1) {
+  display: none;
+}
+
+#sPPDelivery {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.field-code-birthday_day,
+.field-code-birthday_month,
+.field-code-birthday_year {
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+}
+
+.field-code-birthday_year {
+  margin-right: 0;
+}
+
+body .sberbank__content {
+  padding: 0 !important;
+  border: 0 none !important;
+  text-align: left !important;
+}
+
+body .sberbank__content .ibutton {
+  margin: 10px 0;
+}
+
+body .sberbank__price-string {
+  font-family: 'HelveticaNeueCyr', Arial, sans-serif !important;
+}
+
+body .sberbank__price-string b {
+  font-family: 'HelveticaNeueCyr', Arial, sans-serif !important;
+  font-size: inherit !important;
+}
+
+body .sberbank__payment-description,
+body .sberbank__description {
+  font-family: 'HelveticaNeueCyr', Arial, sans-serif !important;
+  line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .cols-order .col-order {
+    width: calc(50% - 25px);
+    min-width: calc(50% - 25px);
+    max-width: calc(50% - 25px);
+  }
+
+}
+
+
+@media only screen and (max-width: 919px) {
+
+  .popup-window {
+    width: calc(100% - 30px) !important;
+    left: 15px !important;
+  }
+
+  #DPD_info {
+    width: calc(100% - 100px);
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .DPD_arrow {
+    margin-bottom: 10px;
+  }
+
+  #DPD_ten {
+    height: 0;
+  }
+
+  #DPD_sign,
+  #DPD_delivInfo_PVZ {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .cols-order.buttons {
+    flex-direction: column-reverse;
+  }
+
+  .cols-order .col-order {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .cols-order.buttons .col-order.wrap-buttons-between {
+    flex-direction: column;
+  }
+
+  .cols-order.buttons .col-order.wrap-buttons-between:nth-child(2) {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .cols-order.buttons .col-order.wrap-buttons-between .ibutton:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .description-help {
+    position: static;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .order .buyer {
+    width: 100%;
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  .order .methods {
+    margin: 62px 0 32px;
+  }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  .field-code-birthday_day {
+    width: 40%;
+  }
+
+  .field-code-birthday_month,
+  .field-code-birthday_year {
+    width: 25%;
+  }
+
+}
+
+.btn-russian-post {
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: all 0.2s ease;
+  color: #444;
+}
+
+.russian-post-info {
+  display: block;
+  line-height: 1.3;
+  font-size: 12px;
+  color: #8D8D8D;
+}

@@ -1,0 +1,147 @@
+.order-page {
+  overflow: hidden;
+
+  .element_block {
+    float: left;
+    width: 70%;
+    &__top {
+      overflow: hidden;
+    }
+    &__bottom {
+      overflow: hidden;
+      padding-top: 20px;
+    }
+    &__left {
+      width: 500px;
+      float: left;
+    }
+    &__pict {
+      min-height: 800px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__color {
+      ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-right: 30px;
+          color: #8D8D8D;
+          cursor: pointer;
+          &.select {
+            color: #222;
+          }
+        }
+      }
+    }
+    &__right {
+      margin-left: 500px;
+      padding: 0px 15px;
+    }
+    &__title {
+
+    }
+    &__price {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1;
+      color: #222;
+      margin: 10px 0px;
+    }
+    &__prop {
+      font-size: 15px;
+      line-height: 1;
+      color: #444;
+      margin: 30px 0px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 1;
+      color: #444;
+      margin: 30px 0px;
+    }
+    &__table {
+      border-top: 1px solid #CDCDCD;
+      border-bottom: 1px solid #CDCDCD;
+      margin: 30px 0px 0px;
+      padding: 20px 0px;
+      table {
+        border-collapse: initial;
+        width: 100%;
+        tr {
+
+        }
+        th {
+          padding: 8px 0px;
+          font-weight: 500;
+          text-align: center;
+          &:first-child {
+            text-align: left;
+          }
+        }
+        td {
+          padding: 8px 15px;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid transparent;
+          &:first-child {
+            text-align: left;
+            padding: 8px 0px;
+          }
+          &.select {
+            border: 1px solid #CDCDCD;
+          }
+        }
+      }
+    }
+    .ibutton {
+      /*padding: 14px 0px;*/
+      width: 100%;
+    }
+  }
+
+  .order-cart {
+    float: right;
+    width: 30%;
+
+    .basket-table tr.head th {
+      text-align: center;
+      &:first-child{
+        text-align: left;
+      }
+    }
+
+    .basket-table td.summa
+    {
+      white-space: nowrap;
+      padding: 0px 10px;
+    }
+
+    .total-table .total td:nth-child(1) {
+      text-transform: inherit;
+    }
+
+  }
+
+  &.first{
+    .element_block{
+      display:none;
+    }
+    .order-cart{
+      float:inherit;
+      width:auto;
+    }
+  }
+}
+
+
+
+.order-order {
+  padding-top: 30px;
+}
+
+

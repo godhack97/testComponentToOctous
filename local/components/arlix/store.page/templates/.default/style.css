@@ -1,0 +1,182 @@
+.element-store-view {
+  overflow: hidden;
+  margin-bottom: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.element-store-view.display {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.element-store-view .element_block {
+  width: 100%;
+}
+.element-store-view .element_block__top {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.element-store-view .element_block__bottom {
+  padding-top: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.element-store-view .element_block__left {
+  display: none;
+  width: 30%;
+}
+.element-store-view .element_block__pict {
+  height: 138px;
+  width: 93px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0 none;
+}
+.element-store-view .element_block__color {
+  margin-bottom: 20px;
+}
+.element-store-view .element_block__color ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.element-store-view .element_block__color ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 2px;
+  color: #8D8D8D;
+  cursor: pointer;
+  line-height: 25px;
+  font-size: 13px;
+}
+.element-store-view .element_block__color ul li:last-child {
+  margin-right: 0;
+}
+.element-store-view .element_block__color ul li.select {
+  color: #222;
+}
+.element-store-view .element_block__right {
+  width: 100%;
+}
+.element-store-view .element_block__title a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1F1F1F;
+}
+.element-store-view .element_block__price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  color: #1F1F1F;
+  margin: 10px 0 20px;
+}
+.element-store-view .element_block__prop {
+  font-size: 13px;
+  line-height: 1;
+  color: #8D8D8D;
+  margin: 0 0 10px;
+}
+.element-store-view .element_block__text {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.element-store-view .element_block__table {
+  margin: 30px 0 0;
+}
+.element-store-view .element_block__table table {
+  border-collapse: initial;
+  width: 100%;
+}
+.element-store-view .element_block__table table th,
+.element-store-view .element_block__table table td {
+  padding: 6px 10px 5px;
+  text-align: center;
+  cursor: default;
+  background-color: #F9F9F9;
+  border: 1px solid #fff;
+  font-size: 12px;
+  line-height: 1.3;
+  opacity: 1;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(143, 143, 143, 0) inset;
+}
+.element-store-view .element_block__table table th:hover,
+.element-store-view .element_block__table table td:hover {
+  opacity: 0.5;
+}
+.element-store-view .element_block__table table th:first-child, .element-store-view .element_block__table table th:first-child:hover,
+.element-store-view .element_block__table table td:first-child,
+.element-store-view .element_block__table table td:first-child:hover {
+  text-align: left;
+  cursor: default;
+  opacity: 1;
+}
+.element-store-view .element_block__table table th {
+  font-weight: 500;
+  text-align: center;
+  background-color: #EFEFEF;
+  cursor: default;
+}
+.element-store-view .element_block__table table th:hover {
+  opacity: 1;
+}
+/*.element-store-view .element_block__table table td.select {
+  box-shadow: 0 0 0 2px rgba(143, 143, 143, 0.7) inset;
+}*/
+.element-store-view .element_block .ibutton {
+  width: 100%;
+}
+.element-store-view .element_info_cols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.element-store-view .element_info_col_image {
+  margin-right: 30px;
+}
+.element-store-view.first .element_block {
+  display: none;
+}
+.element-store-view.first .order-cart {
+  float: inherit;
+  width: auto;
+}
+
+.order-order {
+  padding-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+@media only screen and (max-width: 768px) {
+  
+  .page-content article h1.element_block__title {
+    text-align: left; 
+    padding-top: 0; 
+  }
+  
+}

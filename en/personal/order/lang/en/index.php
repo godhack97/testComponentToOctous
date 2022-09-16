@@ -1,0 +1,8 @@
+<?
+$MESS["ORDER_STATUS_CANCEL"] = "Canceled";
+$MESS["ORDER_STATUS_ORDERS"] = "Orders";
+$MESS["ORDER_STATUS_ORDERS_EMPTY"] = "No orders yet";
+$MESS["ORDER_STATUS_PRICE"] = "Sum";
+$MESS["ORDER_STATUS_QUANTITY"] = "Quantity";
+$MESS["ORDER_STATUS_UNIT"] = "pc.";
+$MESS["ORDER_STATUS_MORE"] = "More details";

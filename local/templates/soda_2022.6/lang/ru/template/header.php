@@ -1,0 +1,14 @@
+<?
+$MESS["HEADER_META_APPLICATION_NAME"] = "Sodamoda";
+$MESS["HEADER_NEWS_LIST_SLIDER_PC"] = "Новости";
+$MESS["HEADER_NEWS_LIST_SLIDER_SLIDER_MOBILE"] = "Новости";
+$MESS["HEADER_INFO_MENU_CHAT"] = "Чат";
+$MESS["HEADER_MENU_NEW"] = "Женщинам";
+
+$MESS["HEADER_POPUP_CALLING_TITLE_WHATSAPP"] = "Связаться с нами в WhatsApp";
+$MESS["HEADER_POPUP_CALLING_WHATSAPP"] = "whatsapp";
+$MESS["HEADER_POPUP_CALLING_CHAT"] = "Чат";
+$MESS["HEADER_POPUP_CALLING_CALL"] = "Позвонить";
+$MESS["HEADER_POPUP_CALLING_TELEGRAM"] = "Telegram";
+
+$MESS["ACTION_BANNER_TEXT_SECTION"] = "BLACK FRIDAY&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;скидки до&nbsp;50&nbsp;%";

@@ -1,0 +1,26 @@
+.o-fav-link {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	position: relative;
+}
+.o-fav-link-count {
+	color: #000;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: red;
+	padding: 3px 6px 4px;
+	color: #fff;
+	line-height: 1;
+	font-size: 11px;
+	border-radius: 4px;
+	opacity: 1;
+	transition: opacity 0.3 ease-in;
+}
+.o-fav-link-count.is-hide {
+	opacity: 0;
+}
+.o-fav-link svg {
+	width: 30px;
+}

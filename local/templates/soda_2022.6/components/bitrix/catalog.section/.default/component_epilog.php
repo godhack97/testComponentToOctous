@@ -1,0 +1,68 @@
+<? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+
+/**
+ * @var array $arParams
+ * @var array $templateData
+ * @var string $templateFolder
+ * @var CatalogSectionComponent $component
+ */
+
+global $APPLICATION;
+
+if (isset($templateData['TEMPLATE_THEME']))
+{
+	$APPLICATION->SetAdditionalCSS($templateFolder.'/themes/'.$templateData['TEMPLATE_THEME'].'/style.css');
+	$APPLICATION->SetAdditionalCSS('/bitrix/css/main/themes/'.$templateData['TEMPLATE_THEME'].'/style.css', true);
+}
+
+if (!empty($templateData['TEMPLATE_LIBRARY']))
+{
+	$loadCurrency = false;
+	if (!empty($templateData['CURRENCIES']))
+	{
+		$loadCurrency = \Bitrix\Main\Loader::includeModule('currency');
+	}
+
+	CJSCore::Init($templateData['TEMPLATE_LIBRARY']);
+
+	if ($loadCurrency)
+	{
+		?>
+		<script>
+			BX.Currency.setCurrencies(<?=$templateData['CURRENCIES']?>);
+		</script>
+		<?
+	}
+}
+
+if($APPLICATION->GetCurDir() == '/catalog/new/'){
+  $APPLICATION->SetTitle('Новинки — от российского бренда SODAMODA');
+} elseif($APPLICATION->GetCurDir() == '/en/catalog/new/'){
+  $APPLICATION->SetTitle('Новинки — от российского бренда SODAMODA');
+}
+//	lazy load and big data json answers
+$request = \Bitrix\Main\Context::getCurrent()->getRequest();
+if ($request->isAjaxRequest() && ($request->get('action') === 'showMore' || $request->get('action') === 'deferredLoad'))
+{
+	$content = ob_get_contents();
+	ob_end_clean();
+
+	list(, $itemsContainer) = explode('<!-- items-container -->', $content);
+	list(, $paginationContainer) = explode('<!-- pagination-container -->', $content);
+
+	if ($arParams['AJAX_MODE'] === 'Y')
+	{
+		$component->prepareLinks($paginationContainer);
+	}
+
+	$component::sendJsonAnswer(array(
+		'items' => $itemsContainer,
+		'pagination' => $paginationContainer
+	));
+}
+
+if(LANGUAGE_ID == 'en') 
+{
+	$arResult['IPROPERTY_VALUES']['ELEMENT'] = "section";
+	$_SERVER["META_DATA"] = $arResult['IPROPERTY_VALUES'];
+}

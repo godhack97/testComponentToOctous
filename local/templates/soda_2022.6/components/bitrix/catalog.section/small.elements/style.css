@@ -1,0 +1,31 @@
+
+.share-favorites {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.share-favorites .label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-top: 2px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .share-favorites {
+    margin-top: 55px;
+    margin-bottom: -30px;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+}

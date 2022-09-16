@@ -1,0 +1,208 @@
+.hide_empty_top {
+  display: none;
+}
+
+.cols-order {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.cols-order .col-order {
+  position: relative;
+  width: calc(50% - 60px);
+  min-width: calc(50% - 60px);
+  max-width: calc(50% - 60px);
+}
+
+.description-help {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8D8D8D;
+}
+
+.wrap-buttons-between .group-width {
+  width: calc(50% - 10px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.share-basket {
+  float: right;
+  cursor: pointer;
+  margin-top: -18px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.share-basket .label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-top: 2px;
+}
+
+.total-wrap.total-basket {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.basket-item-price-old-text {
+  color: rgb(31 31 31 / 35%);
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+.basket-coupon-wrapper {
+  width: calc(50% - 60px);
+  padding-top: 25px;
+}
+
+.basket-coupon-alert-section {
+  margin-bottom: 15px;
+}
+
+.basket-coupon-alert-section,
+.basket-coupon-alert-section * {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.basket-coupon-alert {
+  position: relative;
+  padding: 0 70px 5px 0;
+}
+
+.basket-coupon-text {
+  color: #8D8D8D;
+}
+
+.basket-coupon-text strong {
+  text-transform: uppercase;
+  color: #1F1F1F;
+}
+
+.basket-coupon-alert .close-link {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  text-transform: lowercase;
+  border-bottom: 1px solid;
+  line-height: 1;
+  font-size: 12px;
+}
+
+.basket-coupon-block-coupon-btn {
+  
+}
+
+.basket-coupon-section .form .field .placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.basket-table tr.not_available{
+  position: relative;
+}
+.basket-items-list-item-warning-container{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.basket-items-list-item-warning-container > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.control .delete{
+  position: relative;
+  z-index: 1000;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .cols-order.buttons {
+    flex-direction: column-reverse;
+  }
+  
+  .cols-order .col-order {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .cols-order.buttons .col-order.wrap-buttons-between {
+    flex-direction: column;
+  }
+  
+  .cols-order.buttons .col-order.wrap-buttons-between:nth-child(2) {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  
+  .cols-order.buttons .col-order.wrap-buttons-between .ibutton:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  .description-help {
+    position: static;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .share-basket {
+    margin-top: 55px;
+    margin-bottom: -30px;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .basket-coupon-wrapper {
+    width: 100%;
+    padding-top: 25px;
+  }
+  
+  .total-wrap.total-basket .total-table {
+    width: 100%;
+  }
+  
+  .total-table tr td:nth-child(1) {
+    padding-right: 10px !important;
+  }
+  
+  .basket-item-price-old-text {
+    position: absolute;
+    top: -21px;
+    right: 0;
+    margin-right: 0;
+    text-align: right;
+    white-space: nowrap;
+  }
+}

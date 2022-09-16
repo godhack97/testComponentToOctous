@@ -1,0 +1,31 @@
+<?
+$aMenuLinks = array(
+  array(
+    'Профиль',
+    '/personal/profile/',
+    array(),
+    array(),
+    ''
+  ),
+  array(
+    'Каталог',
+    '/manager/products/',
+    array(),
+    array(),
+    'CSite::InGroup(array(1,8,9,15,16))'
+  ),
+  array(
+    'Создать заказ',
+    '/manager/create/',
+    array(),
+    array(),
+    'CSite::InGroup(array(1,15))'
+  ),
+  array(
+    'Остатки',
+    '/manager/store/',
+    array(),
+    array(),
+    'CSite::InGroup(array(1,8,9,15,16))'
+  )
+);

@@ -1,0 +1,19 @@
+.images-return {
+  padding: 0 0 30px 20px;
+}
+
+.images-return img {
+  max-width: 150px;
+}
+
+.images-return a:nth-child(1) {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 449px) {
+
+  .images-return img {
+    max-width: 110px;
+  }
+
+}

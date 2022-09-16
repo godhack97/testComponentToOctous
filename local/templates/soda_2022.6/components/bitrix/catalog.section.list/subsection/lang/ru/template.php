@@ -1,0 +1,2 @@
+<?
+$MESS["CATALOG_SECTION_SHOW_ALL"] = "Все";

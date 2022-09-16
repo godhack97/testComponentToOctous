@@ -1,0 +1,8 @@
+<?php
+$MESS['NETWORK_PAYMENT_MESSAGE_THANKS_DESCRIPTION'] = 'Payment successful РІвЂћвЂ“';
+$MESS['NETWORK_PAYMENT_MESSAGE_THANKS'] = 'Thank you for your purchase!';
+$MESS['NETWORK_PAYMENT_MESSAGE_ERROR'] = "Payment failed!";
+$MESS['NETWORK_PAYMENT_FIELD_MEASURE'] = 'PC';
+$MESS['NETWORK_PAYMENT_FIRLD_DELIVERY'] = 'Delivery';
+$MESS['NETWORK_MESSAGE_PAYMENT_ERROR'] = 'Error, payment failed.';
+$MESS['NETWORK_RETURN_LINK'] = 'Return to Mainpage';

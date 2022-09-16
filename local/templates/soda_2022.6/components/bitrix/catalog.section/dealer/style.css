@@ -1,0 +1,8 @@
+.lazyload-items-spinner{
+    text-align: center;
+    display: none;
+}
+
+.item__hide{
+    display: none !important;
+}
